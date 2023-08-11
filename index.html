@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcular Vuelto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <div class="container">
@@ -16,12 +17,12 @@
             
             <div class="obj1">
                 <label for="price">Costo de la compra: $</label>
-                <input name="price" type="number" value="0" min="0" step="10" class="purchase-price checkbox" autocomplete="off"></input>
+                <input name="price" onkeypress="return permite(event, 'num')" type="number" value="0" min="0" step="10" class="purchase-price checkbox" autocomplete="off"></input>
             </div>
 
             <div class="obj2">
                 <label for="payment">Pago del cliente: $</label>
-                <input name="payment" type="number" value="0" min="0" step="10" class="customer-payment checkbox" autocomplete="off"></input>
+                <input name="payment" onkeypress="return permite(event, 'num')" type="number" value="0" min="0" step="10" class="customer-payment checkbox" autocomplete="off"></input>
             </div>
 
             <div class="obj3">
@@ -29,15 +30,15 @@
                 <span name="vuelto" class="remaining-cash"></span>
             </div>
             
-            <input type="submit" value="Calcular" class="button-submit obj4">
+            <input type="submit" value="Calcular" class="button-submit obj4 buttonStyles">
 
-            <button class="reset">Restaurar valores</button>
+            <button class="reset buttonStyles">Restaurar valores</button>
 
             <span class="error"></span>
         </div>
 
         <footer >
-            &copy Nicolás Antonio Zunino | 2022
+            Copyright &copy 2022 NAZ
         </footer>
     </div>
 

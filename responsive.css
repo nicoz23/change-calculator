@@ -1,0 +1,17 @@
+/* mobile first */
+body { font-size: 14px; }
+
+/* tabletas */
+@media (min-width: 768px) {
+  body { font-size: 15px; }
+}
+
+/* escritorio normales */
+@media (min-width: 992px) {
+  body { font-size: 16px; }
+}
+
+/* pantallas grandes */
+@media (min-width: 1200px) {
+  body { font-size: 17px; }
+}
